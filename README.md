@@ -3,6 +3,7 @@
 
   ## Informações:
    * Documentação: [Radon 2.4.0](https://radon.readthedocs.io/en/latest/index.html)
+   * Repositório: [GitHub](https://github.com/rubik/radon)
    * PyPI: [Project Radon](https://pypi.org/project/radon/)
 
 
