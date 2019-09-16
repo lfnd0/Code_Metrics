@@ -23,8 +23,10 @@
   ### Complexidade ciclomática:
     radon cc nome_do_arquivo.py
   ou:
+
     radon cc nome_do_arquivo.py -s
   ou:
+  
     radon cc nome_do_arquivo.py -a -nc
   ### Índice de manutenção:
     radon mi nome_do_arquivo.py
