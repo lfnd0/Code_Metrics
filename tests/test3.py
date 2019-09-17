@@ -1,4 +1,4 @@
-#Snake
+#Snake com PyGame
 
 import os
 import sys, traceback
