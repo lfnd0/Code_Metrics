@@ -22,11 +22,23 @@
     radon raw nome_do_arquivo.py
   ### Complexidade ciclomática:
     radon cc nome_do_arquivo.py
-  ou:
+  para listagem do sumário:
 
     radon cc nome_do_arquivo.py -s
-  ou:
+  para calcular a complexidade média no final:
   
+    radon cc nome_do_arquivo.py -a
+  para calcular a média total:
+  
+    radon cc nome_do_arquivo.py --total-average
+  para mostrar apenas os resultados de um determinado grau (A a F):
+
+    radon cc nome_do_arquivo.py -a -na
+  para mostrar apenas os resultados de um determinado grau (D a F):
+
+    radon cc nome_do_arquivo.py -a -nd
+  para mostrar apenas os resultados de um determinado grau (C):
+
     radon cc nome_do_arquivo.py -a -nc
   ### Índice de manutenção:
     radon mi nome_do_arquivo.py
