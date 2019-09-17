@@ -22,7 +22,7 @@
     radon raw nome_do_arquivo.py
   ### Complexidade ciclomática:
     radon cc nome_do_arquivo.py
-   #### Listagem com sumário:
+   #### Listagem com resumo da métrica escolhida:
 
     radon cc nome_do_arquivo.py -s
    #### Cálculo da média final:
@@ -40,6 +40,9 @@
    #### Impressão dos resultados de um determinado grau (C):
 
     radon cc nome_do_arquivo.py -a -nc
+   #### Análise através de subdiretório(s):
+    
+    radon cc nome_do_path
   ### Índice de manutenção:
     radon mi nome_do_arquivo.py
   ### Métricas de Halsted:
