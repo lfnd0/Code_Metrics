@@ -1,49 +1,23 @@
-# Radon Code Metrics
-
-
-  ## Informações:
-   * Documentação: [Radon 2.4.0](https://radon.readthedocs.io/en/latest/index.html)
-   * Repositório: [GitHub](https://github.com/rubik/radon)
-   * PyPI: [Project Radon](https://pypi.org/project/radon/)
+# Code Metrics
 
 
   ## Instalação do ambiente virtual:
     python -m venv env
-
-
-  ## Instalação do Radon:  
+  
+  ## Ativação do ambiente virtual:
+    env\Scripts\activate
+  
+  ## Radon:
+   * Documentação: [Radon 2.4.0](https://radon.readthedocs.io/en/latest/index.html)
+   * Repositório: [GitHub](https://github.com/rubik/radon)
+   * PyPI: [Project Radon](https://pypi.org/project/radon/)
+  
+  ### Instalação Radon:  
     pip install radon
-
-
-  ## Comandos:
-  ### Ajuda:
-    radon --help
-  ### LOC, LLOC e SLOC: 
-    radon raw nome_do_arquivo.py
-  ### Complexidade ciclomática:
-    radon cc nome_do_arquivo.py
-   #### Listagem com resumo da métrica escolhida:
-
-    radon cc nome_do_arquivo.py -s
-   #### Cálculo da média final:
   
-    radon cc nome_do_arquivo.py -a
-   #### Cáculo da média total:
-  
-    radon cc nome_do_arquivo.py --total-average
-   #### Impressão dos resultados de um determinado grau (A a F):
+  ## Flake8:
+   * Documentação: [Flake8](http://flake8.pycqa.org/en/latest/#)
+   * Repositório: [GitHub](https://github.com/PyCQA/flake8)
 
-    radon cc nome_do_arquivo.py -a -na
-   #### Impressão dos resultados de um determinado grau (D a F):
-
-    radon cc nome_do_arquivo.py -a -nd
-   #### Impressão dos resultados de um determinado grau (C):
-
-    radon cc nome_do_arquivo.py -a -nc
-   #### Análise através de subdiretório(s):
-    
-    radon cc nome_do_path
-  ### Índice de manutenção:
-    radon mi nome_do_arquivo.py
-  ### Métricas de Halsted:
-    radon hal nome_do_arquivo.py
+  ### Instalação Flake8:
+    python -m pip install flake8
