@@ -1,17 +1,9 @@
-#Algoritmo de Euclides
+#Fibonaccci
 
-def euclides_mdc(dividendo, divisor):
-    while divisor != 0:
-        temp = divisor
-        divisor = dividendo % divisor
-        dividendo = temp    
-    return dividendo
-     
-def euclides_recursivo_mdc(dividendo, divisor):
-    if divisor == 0:
-        return dividendo
+def fib(num):
+    if num <= 1:
+        return num
     else:
-        return euclides_recursivo_mdc(divisor, dividendo % divisor)
+        return fib(num - 1) + fib(num - 2)
 
-euclides_mdc(128, 42)
-euclides_recursivo_mdc(125, 37)
+fib(23)
