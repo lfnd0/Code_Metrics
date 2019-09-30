@@ -7,7 +7,7 @@ from radon.metrics import h_visit
 from data.conexao import conectar
 from mysql.connector.errors import ProgrammingError, IntegrityError
 
-for filename in iter_filenames([r'.\tests']):
+for filename in iter_filenames([r'./tests']):
 
     with open(filename, encoding="utf8") as fobj:
         source = fobj.read()
