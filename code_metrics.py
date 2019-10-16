@@ -14,11 +14,11 @@ for filename in iter_filenames([r'./tests']):
         source = fobj.read()
     
     # blocks = cc_visit(source)
-    # print(f'Complexidade ciclomática: {blocks[0].complexity}')
     raw = analyze(source)
     hal = h_visit(source)
 
     sql = 'INSERT INTO resultado_metricas (nome, loc_raw, lloc_raw, sloc_raw, hal_h1, hal_h2, hal_N1, hal_N2, hal_vocabulario, hal_tamanho, hal_volume, hal_dificuldade, hal_esforco, hal_tempo, hal_bugs) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
+    # args = (blocks[0].complexity)
     args = (os.path.basename(filename), raw.loc, raw.lloc, raw.sloc, hal.total.h1, hal.total.h2, hal.total.N1, hal.total.N2, hal.total.vocabulary, hal.total.length, hal.total.volume, hal.total.difficulty, hal.total.effort, hal.total.time, hal.total.bugs)
     
     try:
